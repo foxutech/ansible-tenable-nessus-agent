@@ -1,0 +1,6 @@
+---
+
+- include: setup.yml
+
+- include: link-agent.yml
+  when: nessus_agent_link

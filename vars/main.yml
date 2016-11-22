@@ -1,0 +1,10 @@
+---
+
+# The file name
+nessus_agent_file_name: "NessusAgent-{{ nessus_agent_version }}"
+
+# The Agent name
+nessus_agent_name: "nessus-service"
+
+# The Agent command line tool
+nessus_agent_cli_tool: "/Library/NessusAgent/run/sbin/nessuscli"
