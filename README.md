@@ -11,7 +11,7 @@ See [meta info](meta/main.yml).
 
 ## User Manual
 
-### How to use
+### Basic usage
 
 * Add the role to your project's Ansible galaxy requirements file and install it via the ansible-galaxy command
 ```
@@ -23,6 +23,19 @@ See [meta info](meta/main.yml).
 ```
 roles:
     - role: nessus-agent
+```
+
+### Deploy and pair
+
+* Pass in the following values in order to deploy and link the agent (sample values):
+```
+roles:
+    - role: nessus-agent
+      nessus_agent_key: "sdfasdjfee4545345345gasdgsag"
+      nessus_agent_name: "osx-server01.tinkerstest.com"
+      nessus_agent_host_name: "nessus-manager.tinkerstest.com"
+      nessus_agent_host_port: "443"
+      nessus_agent_link: true
 ```
 
 ## Configuration
