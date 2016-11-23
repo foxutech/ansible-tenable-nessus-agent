@@ -20,7 +20,7 @@
     state: absent
 
 - name: Register Agent process status
-  shell: "ps ax | grep -v grep | grep {{ nessus_agent_name }}"
+  shell: "ps ax | grep -v grep | grep {{ nessus_agent_service_name }}"
   register: agent_process
   ignore_errors: false
 
