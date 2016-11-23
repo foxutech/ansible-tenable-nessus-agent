@@ -26,4 +26,4 @@
 
 - debug:
     msg: "Nessus Agent seems to be running"
-  when: agent_process.stdout.find("{{ nessus_agent_name }}") != -1
+  when: agent_process.stdout.find("{{ nessus_agent_service_name }}") != -1
