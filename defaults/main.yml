@@ -29,3 +29,7 @@ nessus_agent_host_port: ""
 
 # Flag used to perform pairing
 nessus_agent_link: false
+
+# In case the Agent is already linked, this flag can be set in order to force
+# a re-registration
+nessus_agent_link_force: false
