@@ -19,5 +19,4 @@
   ignore_errors: false
 
 - debug:
-    msg: "Nessus Agent seems to be linked"
-  when: agent_link_status.stdout.find("is linked") != -1
+    msg: "Nessus Agent link status: {{agent_link_status.stdout}}"
