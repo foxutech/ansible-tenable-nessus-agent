@@ -1,6 +1,9 @@
 ---
 
-- include: setup.yml
+- include: uninstall-agent.yml
+  when: nessus_agent_uninstall
 
+- include: install-agent.yml
+  
 - include: link-agent.yml
   when: nessus_agent_link
