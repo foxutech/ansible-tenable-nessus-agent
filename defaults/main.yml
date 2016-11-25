@@ -3,8 +3,11 @@
 # The Agent version
 nessus_agent_version: "6.9.1"
 
+# The Agent download file checksum (md5)
+nessus_agent_file_checksum: "md5:1cae90d7249ce1af382ed3984b623c63"
+
 # The download URL for the Agent
-nessus_agent_download_url: "http://downloads.nessus.org/nessus3dl.php?file=NessusAgent-{{ nessus_agent_version }}.dmg&licence_accept=yes&t=174d6fa37a74b90c9964b462a6ec97e1"
+nessus_agent_download_url: "http://downloads.nessus.org/nessus3dl.php?file=NessusAgent-{{ nessus_agent_version }}.dmg&licence_accept=yes&t=9f5d7c5a3bb912ff4a859d7acdd8dc78"
 
 # The temporary working dir
 nessus_agent_temp_dir: "/tmp"
@@ -33,3 +36,6 @@ nessus_agent_link: false
 # In case the Agent is already linked, this flag can be set in order to force
 # a re-registration
 nessus_agent_link_force: false
+
+# Uninstall the Agent if present
+nessus_agent_uninstall: false
