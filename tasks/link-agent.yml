@@ -3,7 +3,7 @@
 - name: Register Agent link status
   shell: "{{ nessus_agent_cli_tool }} agent status"
   register: agent_link_status
-  ignore_errors: false
+  ignore_errors: true
 
 - name: Unlink Agent
   command: "{{ nessus_agent_cli_tool }} agent unlink"
@@ -18,7 +18,7 @@
 - name: Register Agent link status
   shell: "{{ nessus_agent_cli_tool }} agent status"
   register: agent_link_status
-  ignore_errors: false
+  ignore_errors: true
 
 - debug:
     msg: "Nessus Agent link status: {{agent_link_status.stdout}}"
