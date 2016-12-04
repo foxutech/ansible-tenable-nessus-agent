@@ -1,7 +1,7 @@
 ---
 
 - name: Disable Agent
-  command: "launchctl remove com.tenablesecurity.nessusagent"
+  command: "launchctl remove {{ nessus_agent_service_domain }}"
 
 - name: Ensure the Agent install dir has been deleted
   file:
