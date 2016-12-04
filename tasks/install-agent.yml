@@ -12,6 +12,11 @@
 - name: Perform Agent installation
   command: "installer -allowUntrusted -verboseR -pkg {{ nessus_agent_mount_point }}/{{ nessus_agent_file_name }}/Install\\ Nessus\\ Agent.pkg -target /"
 
+- name: Copy deployment version file
+  template:
+    src: "agent-version.j2"
+    dest: "{{ nessus_agent_install_root }}/agent-version"
+
 - name: Unmount the installer image
   command: "hdiutil unmount {{ nessus_agent_mount_point }}/{{ nessus_agent_file_name }}"
 
