@@ -20,9 +20,3 @@
 
 - debug:
     msg: "Nessus Agent link status: {{agent_link_status.stdout}}"
-
-- name: Copy deployment version file
-  template:
-    src: "agent-version.j2"
-    dest: "{{ nessus_agent_install_root }}/agent-version"
-
