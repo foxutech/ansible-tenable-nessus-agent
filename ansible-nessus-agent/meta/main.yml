@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  description: Nessus Agent role for Ansible
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - system
+dependencies: []

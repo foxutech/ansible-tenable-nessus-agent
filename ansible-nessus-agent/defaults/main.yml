@@ -1,0 +1,41 @@
+---
+
+# The Agent version
+nessus_agent_version: "7.0.3"
+
+# The Agent download file checksum (md5)
+nessus_agent_file_checksum: "md5:ebcfd859fec622695bc9b35c056bed57"
+
+# The download URL for the Agent
+nessus_agent_download_url: "https://transfer.sh/12rlRj/NessusAgent-7.0.3-ubuntu1110_i386.deb"
+
+# The temporary working dir
+nessus_agent_temp_dir: "/tmp"
+
+# The mount point
+nessus_agent_mount_point: "/Volumes"
+
+# The pairing key from the Nessus Manager/Scanner
+nessus_agent_key: "309608e1dd1c9c3185737c9fc4645e9c1d99d36338cc5ffe3e8ee3a5dbbbc642"
+
+# The name representing the system where the Agent is being installed (e.g. the host name)
+nessus_agent_name: "testagent"
+
+# The Agent groups
+nessus_agent_groups: "Linux"
+
+# The host name or IP of the Nessus Manager/Scanner
+nessus_agent_host_name: "cloud.tenable.com"
+
+# The port of the Nessus Manager/Scanner
+nessus_agent_host_port: "443"
+
+# Flag used to perform pairing
+nessus_agent_link: false
+
+# In case the Agent is already linked, this flag can be set in order to force
+# a re-registration
+nessus_agent_link_force: false
+
+# Uninstall the Agent if present
+nessus_agent_uninstall: false
